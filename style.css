@@ -11,6 +11,12 @@
     --media-bg: linear-gradient(180deg, #4d21c9 0%, rgba(37, 33, 201, 0.00) 100%, rgba(37, 33, 201, 0.00) 100%);
     --white: #fff;
     --light-blue: #cac9ff;
+    --dark-navy; #303859;
+    --Resumo-div-bg: linear-gradient(0deg,rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%);
+    --reacao-bg: #ff5555;
+    --memoria-bg: #ffb21e;
+    --verbal-bg: #00bb8f;
+    --visual-bg: #1125d6;
 }
 
 body {
@@ -62,4 +68,49 @@ body {
     max-width: 26rem;
     margin-inline: auto;
     color: var(--light-blue);
+}
+
+.Resumo {
+    padding: 2.4rem 3.2rem;
+}
+
+.Resumo h2 {
+    color: var(--dark-navy);
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.Resumo > div {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    margin-bottom: 1.6rem;
+}
+
+.Resumo > div div {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.Resumo_reacao {
+    background: var(--reacao-bg) var(--Resumo-div-bg);
+    color: var(--reacao-bg);
+}
+
+.Resumo_memoria {
+    background: var(--memoria-bg) var(--Resumo-div-bg);
+    color: var(--memoria-bg);
+}
+
+.Resumo_verbal {
+    background: var(--verbal-bg) var(--Resumo-div-bg);
+    color: var(--verbal-bg);
+}
+
+.Resumo_visual {
+    background: var(--visual-bg) var(--Resumo-div-bg);
+    color: var(--visual-bg);
 }
