@@ -1,38 +1,39 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
-    font-family: "inter", sans-serif;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif';
 }
 
-:root {
+:root{
     font-size: 62.5%;
     --resultado-bg: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
-    --media-bg: linear-gradient(180deg, #4d21c9 0%, rgba(37, 33, 201, 0.00) 100%, rgba(37, 33, 201, 0.00) 100%);
+    --media-bg: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0.00) 100%, rgba(37, 33, 201, 0.00) 100%);
     --white: #fff;
-    --light-blue: #cac9ff;
-    --dark-navy; #303859;
-    --Resumo-div-bg: linear-gradient(0deg,rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%);
-    --reacao-bg: #ff5555;
-    --memoria-bg: #ffb21e;
-    --verbal-bg: #00bb8f;
-    --visual-bg: #1125d6;
+    --light-blue: #CAC9FF;
+    --dark-navy: #303b59;
+    --resumo-div-bg: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%,rgba(255, 255, 255, 0.95) 100%);
+    --reacao-bg: #FF5555;
+    --memoria-bg: #FFB21E;
+    --verbal-bg: #00BB8F;
+    --visual-bg: #1125D6;
+    --very-light-blue: #ecf2ff;
 }
 
-body {
+body{
     font-size: 1.6rem;
 }
 
-.resultado {
+.resultado{
     padding-block: 2.4rem;
     background: var(--resultado-bg);
     text-align: center;
     color: var(--white);
-    border-radius: 0 0 3.2rem 3.2rem;
+    border-radius: 0 0 3.2rem  3.2rem;
 }
 
-.resultado h1 {
-    font-size: 1.Brem;
+.resultado h1{
+    font-size: 1.8rem;
     color: var(--light-blue);
     margin-bottom: 2.5rem;
 }
@@ -59,8 +60,8 @@ body {
     color: var(--light-blue);
 }
 
-.resultado h2 {
-    font-size: 2.4rem;
+.resultado h1 {
+    font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 
@@ -70,63 +71,128 @@ body {
     color: var(--light-blue);
 }
 
-.Resumo {
-    padding: 2.4rem 3.2rem;
+.resumo {
+    padding: 2.4rem 3.3rem;
+    background: var(--white);
 }
 
-.Resumo h2 {
+.resumo h2 {
     color: var(--dark-navy);
     font-size: 1.8rem;
     margin-bottom: 2.5rem;
 }
 
-.Resumo > div {
+.resumo > div {
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    padding: 1.5rem;
+    align-items: center;
+    padding: 1.6rem;
     border-radius: 1.2rem;
     margin-bottom: 1.6rem;
 }
 
-.Resumo > div div {
+.resumo > div div {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap:  1.2rem;
 }
 
-.Resumo > div strong {
+.resumo > div strong {
     color: var(--dark-navy);
 }
 
-.Resumo >div strong span {
+.resumo > div strong span {
     opacity: 0.5;
 }
 
-.Resumo_reacao {
-    background: var(--reacao-bg) var(--Resumo-div-bg);
+.resumo_reacao {
+    background: var(--reacao-bg) var(--resumo-div-bg);
     color: var(--reacao-bg);
 }
 
-.Resumo_memoria {
-    background: var(--memoria-bg) var(--Resumo-div-bg);
+.resumo_memoria {
+    background: var(--memoria-bg) var(--resumo-div-bg);
     color: var(--memoria-bg);
 }
 
-.Resumo_verbal {
-    background: var(--verbal-bg) var(--Resumo-div-bg);
+.resumo_verbal {
+    background: var(--verbal-bg) var(--resumo-div-bg);
     color: var(--verbal-bg);
 }
 
-.Resumo_visual {
-    background: var(--visual-bg) var(--Resumo-div-bg);
+.resumo_visual {
+    background: var(--visual-bg) var(--resumo-div-bg);
     color: var(--visual-bg);
 }
 
-.resumo_button {
+.resumo button {
     margin-top: 0.8rem;
     width: 100%;
     border: none;
     background: var(--dark-navy);
     color: var(--white);
-}
+    padding-block: 1.6rem;
+    border-radius: 12.8rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+ }
+
+ @media (min-width: 736px) {
+    body{
+        min-height: 100svh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 736px;
+        background: var(--white);
+        border-radius: 3.2rem;
+    } 
+
+    .resultado {
+        padding-block: 3.8rem;
+        border-radius: 3.2rem;
+    }
+
+
+    .resultado h1 {
+        font-size: 2.4rem;
+        margin-bottom: 3.6rem;
+    }
+
+    .resultado div {
+        width: 20rem;
+        height: 20rem;
+        margin-bottom: 2.8rem;
+    }
+
+    .resultado div strong:nth-of-type(1){
+        font-size: 7.2rem;
+    }
+
+    .resultado div strong:nth-of-type(2){
+        font-size: 1.8rem;
+    }
+
+    .resultado h2 {
+        margin-bottom: 3.2rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .resultado p {
+        font-size: 1.8rem;
+    }
+
+    .resumo {
+        padding: 3.8rem 4rem;
+    }
+
+    .resumo h2 {
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
+    }
+    
+ }
